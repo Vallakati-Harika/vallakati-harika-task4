@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harika's Web Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Hello, I'm <span class="highlight">Harika</span></h1>
+    <p>A Front-End Web Developer</p>
+    <a href="#skills" class="cta">Explore My Skills</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an aspiring web developer passionate about creating interactive and 
+      user-friendly web experiences. Skilled in HTML, CSS, JavaScript, and version control tools like Git and GitHub.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="htmllogo.jpeg" alt="HTML Logo">
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <img src="csslogo.png" alt="CSS Logo">
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="JavaScriptlogo.png" alt="JavaScript Logo">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <img src="gitlogo.png" alt="Git Logo">
+        <p>Git</p>
+      </div>
+      <div class="skill">
+        <img src="GitHublogo.png" alt="GitHub Logo">
+        <p>GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created by Harika | &copy; 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style> 
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header.hero {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+}
+
+header .highlight {
+  color: #ffd700;
+}
+
+header .cta {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+header .cta:hover {
+  background: #ff3f31;
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  text-align: center;
+  margin: 1rem;
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s;
+}
+
+.skill img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+</style>
+<script>
+    document.querySelector('.cta').addEventListener('click', () => {
+  alert('Welcome to my portfolio!');
+});
+
+</script>
